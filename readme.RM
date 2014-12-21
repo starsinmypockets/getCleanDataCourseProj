@@ -1,0 +1,16 @@
+12/21/2014
+Getting and Cleaning Data Course Project
+
+Paul Walker
+pjwalker76@gmail.com
+
+This is the the curse project submission for Getting and Cleaning Data.
+
+Please find:
+
+• a /data folder with raw data
+• codebook.RM with more detail about methods used to handle data
+• run_analysis.R a script which processes the provided data as per the course assignment, and provides the following variables:
+    ° byActivity - a dataframe showing the mean values of all feature variables, grouped by activity.
+    ° bySubject - a dataframe showing the mean values of all feature variables, grouped by subject.
+    ° byActivityBySubject - a dataframe showing the mean values of all feature variables, grouped by activity by subject.

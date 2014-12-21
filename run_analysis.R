@@ -4,6 +4,7 @@
 ##
 ##
 
+library(plyr);
 # Helper functions
 mapActivityNames <-function (name) {
     switch(name,
