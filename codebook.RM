@@ -1,0 +1,39 @@
+12/21/2014
+Getting and Cleaning Data Course Project
+
+Paul Walker
+pjwalker76@gmail.com
+
+
+OVERVIEW
+--------
+The course project requirements can be found at 
+https://class.coursera.org/getdata-016/human_grading/view/courses/973758/assessments/3/submissions
+
+DATA SOURCE AND FORMATTING
+--------------------------
+The original dataset for the project can be found at:
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+
+• Data used for the course project assignment is found in the /data directory of the submitted project repository.
+• Unless otherwise noted, the observation data was used as is, without formatting, validation or additional processing.
+• A numeric "subject" column was added to the "test" and "train" data sets. The "subject" value is a numeric value from 1 to 30 representing a study subject. 
+• A numeric "activity" column was added to the "test" and "train" sets, and subsequently converted to a named activity (eg: "WALKING") as per /data/activity_subjects.txt.
+• Observations from the "test" and "train" datasets were combined vertically to create a single data set.
+• A data set was tidySet was created, limited to variables which reflect observations relating to mean and standard deviation values, as per assignment instructions.
+• Variables were renamed as per VARIABLE NAMES, below.
+• See /data/README.txt in the project repository for more information about initial variable names, test methods, etc.
+
+VARIABLE NAMES
+--------------
+• The activity column (y_test and y_train data) was renamed from numeric values to string values, according to the key provided by /data/activity_labels.txt
+• All variable names (features) were sanitized for clairy by removing the following potentially ambiguous characters: ( ) , -
+• Variables names were otherwise unchanged, and are explained in greater detail in /data/features_info.txt and /data/README.txt
+
+OUTPUTS
+-------
+The run_analysis.R script provides the following tidy datasets extracted from the provided data:
+
+• byActivity - a dataframe showing the mean values of all feature variables, grouped by activity.
+• bySubject - a dataframe showing the mean values of all feature variables, grouped by subject.
+• byActivityBySubject - a dataframe showing the mean values of all feature variables, grouped by activity by subject.
