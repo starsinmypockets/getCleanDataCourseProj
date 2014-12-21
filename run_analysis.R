@@ -52,7 +52,7 @@ colnames(train2)[1] <- 'activity'; # fix activity col name
 complete <- rbind(test2, train2);
 
 # (2) Extract only the measurements on the mean and standard deviation for each measurement
-fields1 <- c(1:6, 41:46, 81:86, 121:126, 161:166, 201:202, 214:215, 227:228, 240:241, 253:254, 266:271, 294:296, 345:350, 373:375, 424:429, 452:454, 503:504, 513, 516:517, 526, 529, 539, 542:543, 552, 555:561)
+fields1 <- c(1:6, 41:46, 81:86, 121:126, 161:166, 201:202, 214:215, 227:228, 240:241, 253:254, 266:271, 294:296, 345:350, 373:375, 424:429, 452:454, 503:504, 513, 516:517, 526, 529:530, 539, 542:543, 552, 555:561)
 fields2 <- c(1,2, sapply(fields1, function (x) {x+2})); # re-index fields to account for subject & activity fields which come first
 
 # subset of raw dataset 
